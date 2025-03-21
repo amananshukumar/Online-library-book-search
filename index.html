@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Library Search Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>📚 Online Library Search Assistant</h1>
+        <p>Discover your next favorite book or research paper effortlessly.</p>
+    </header>
+
+    <main>
+        <section class="search-section">
+            <input type="text" id="searchInput" placeholder="Search books or research papers..." />
+            <button id="searchButton">Search</button>
+        </section>
+
+        <section class="results-section">
+            <div id="loadingPlaceholder" class="results-container skeleton">
+               
+                <div class="skeleton-card"></div>
+                <div class="skeleton-card"></div>
+                <div class="skeleton-card"></div>
+                <div class="skeleton-card"></div>
+            </div>
+
+            <h2>📖 Google Books Results</h2>
+            <div id="googleBooksResults" class="results-container"></div>
+            <div id="googleBooksPagination" class="pagination"></div>
+
+            <h2>📚 Open Library Results</h2>
+            <div id="openLibraryResults" class="results-container"></div>
+            <div id="openLibraryPagination" class="pagination"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Online Library Search Assistant | Built with 💜 by Aman kumar 1st year NSEC</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
